@@ -1,0 +1,93 @@
+.header {
+  background-image: url(../imgs/header.jpg);
+  background-size: cover;
+  margin-bottom: $sectionMargin;
+
+  .owl-carousel {
+    .owl-carousel__content {
+      text-align: right;
+      h2 {
+        color: #b12b2f;
+        margin: 120px auto 20px;
+        font-weight: bold;
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 2;
+      }
+
+      a {
+        @extend.navy-btn;
+        width: 165px;
+        padding: 7px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .owl-theme {
+    .owl-dots {
+      .owl-dot {
+        width: 20px;
+
+        span {
+          background-color: #fff;
+          width: 13px;
+          height: 13px;
+        }
+
+        &.active {
+          span {
+            border: 1px solid red;
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.site-info {
+  @extend.d-flex;
+  background-image: url(../imgs/about2.png);
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  height: 360px;
+  padding: 20px;
+  margin-bottom: $sectionMargin;
+
+  .info {
+    flex-basis: 50%;
+    font-size: 20px;
+    font-size: calc((20px + (24 - 20) * ((100vw - 1366px) / (1920 - 1366))));
+    text-align: center;
+
+    span {
+      color: $colorRed2;
+    }
+  }
+}
+
+@media (max-width:767px) {
+  .header {
+    background-image: none;
+    background-color: #e4e4e4;
+  }
+
+  .site-info {
+    .info {
+      font-size: calc((16px + (24 - 16) * ((100vw - 320px) / (1366 - 320))));
+    }
+  }
+}
+
+@media (min-width:1024px) {
+  .site-info {
+    .info {
+      width: 50%;
+    }
+  }
+}

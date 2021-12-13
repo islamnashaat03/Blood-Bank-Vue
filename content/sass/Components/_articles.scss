@@ -1,0 +1,76 @@
+.articles {
+	margin: $sectionMargin;
+	position: relative;
+		h3 {
+			color: $headColor;
+      margin: 0;
+			font-weight: bold;
+			padding: 10px;
+      width: fit-content;
+			position: relative;
+			margin-#{$start}:30px ;
+			&::after{
+				position: absolute;
+				content: "";
+				background-color:$headColor ;
+				height: 3px;
+				width: 100%;
+				bottom: -18px;
+				right: 0;
+			}
+	}
+	.owl-articles {
+		.owl-nav {
+			position: absolute;
+			top: -95px;
+			left: 1px;
+			font-size: 70px;
+			color: #b0b0b0;
+			outline: none;
+			font-weight: normal;
+			button {
+				outline: none;
+			}
+			span {
+				margin-right: 15px;
+			}
+		}
+	}
+	.card {
+		position: relative;
+		.card-img-top {
+			padding: 2px;
+		}
+		.card-body {
+			padding: 15px;
+			h5 {
+				color: $headColor;
+				font-weight: bold;
+				padding: 2px;
+			}
+			.card-text {
+				font-size: 16px;
+				color: #525252;
+				padding: 2px;
+				margin: 0;
+			}
+			.details-btn {
+				@extend.navy-btn;
+				font-size: 18px;
+				display: block;
+				text-align: center;
+				outline: none;
+				width: 150px;
+				margin: 10px auto;
+			}
+		}
+		.fa-heart{
+			position: absolute;
+			left: 15px;
+			top: 10px;
+			font-size: 35px;
+			color: #00000070;
+			cursor: pointer;
+		}
+	}
+}
