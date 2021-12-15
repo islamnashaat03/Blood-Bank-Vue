@@ -1,7 +1,7 @@
 <template>
   <section class="articles">
     <div class="container">
-      <h3>المقالات</h3>
+      <h3>{{ title }}</h3>
       <hr />
       <carousel
         class="owl-articles"
@@ -97,5 +97,6 @@
 import carousel from "vue-owl-carousel";
 export default {
   components: { carousel },
+  props: ["title"],
 };
 </script>

@@ -81,7 +81,7 @@
                 </div>
               </div>
               <div class="col-sm-3 d-flex justify-content-center">
-                <router-link class="details-btn active" to="/DonationApp">
+                <router-link class="details-btn" to="/DonationApp">
                   التفاصيل
                 </router-link>
               </div>

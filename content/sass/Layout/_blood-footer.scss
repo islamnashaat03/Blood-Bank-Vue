@@ -61,7 +61,7 @@ footer {
 }
 .copyright{
   background-color: #14171c;
-    color: #d9dadb;
+    color: $colorLight;
     padding: 10px;
     .content{
       display: flex;
@@ -72,7 +72,7 @@ footer {
         align-items: center;
         gap: 20px;
         a{
-          color: #d9dadb;
+          color: $colorLight;
           font-size: 22px;
           &:hover{
             color: #fff;

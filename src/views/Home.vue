@@ -2,7 +2,7 @@
   <div class="home">
     <carousel />
     <site-info />
-    <articles />
+    <articles title="المقالات"></articles>
     <donations />
     <call-us />
     <blood-app />

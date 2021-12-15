@@ -148,7 +148,7 @@
   }
 }
 
-@media (max-width:1200px) {
+@media (min-width:992px) {
   .nav-bar {
     .navbar-collapse {
       .navbar-nav {
@@ -158,6 +158,32 @@
       .navbar-nav__user {
         gap: 10px;
         justify-content: space-evenly;
+      }
+    }
+  }
+}
+@media (min-width:1200px) and (max-width:1440px) {
+  .nav-bar{
+    .navbar-collapse{
+      .navbar-nav{
+        .nav-item {
+          .nav-link {
+            &::before{
+              bottom: -27px;
+            }
+            &:hover{
+              &::before{
+                bottom: -27px;
+              }
+            }
+          }
+          .router-link-exact-active {
+            &::before {
+              bottom: -27px;
+            }
+          
+        }
+        }
       }
     }
   }

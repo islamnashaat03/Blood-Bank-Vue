@@ -1,0 +1,23 @@
+.about{
+  .about-blood-bank{
+    .about-blood-bank-wrapper{
+      img{
+      display: block;
+      margin: auto;
+      height: 150px;
+      margin-bottom: 50px;
+    }
+    h3{
+      color: $colorRed;
+      font-weight: bold;
+      
+    }
+    p
+    {
+      line-height: 2;
+      margin: 40px 0 ;
+    }
+    }
+    
+  }
+}

@@ -1,0 +1,42 @@
+.articles-page {
+  .articles-details {
+    padding: $sectionMargin;
+
+    .head-img {
+      display: block;
+      margin:30px auto;
+      width: 60%;
+    }
+
+    .article-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: #2d3e50;
+
+      h4 {
+        color: #dfe2e4;
+      }
+
+      .fa-heart {
+        color: #dfe2e4;
+        font-size: 30px;
+        cursor: pointer;
+      }
+    }
+
+    .paragraphs {
+      background-color: #fff;
+      border: 1px solid #f2f2f2;
+      margin: 30px 0;
+      padding: 20px;
+
+      p {
+        color: #2d4650;
+        line-height: 2;
+        font-weight: bold;
+      }
+    }
+  }
+}
