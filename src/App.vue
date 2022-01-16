@@ -1,5 +1,8 @@
 <template>
   <div id="app" dir="rtl">
+    <a @click="scrollToTop()" class="up">
+      <i class="fas fa-arrow-up"></i>
+    </a>
     <upper-nav />
     <nav-bar />
     <router-view />
@@ -15,11 +18,24 @@ import copyRight from "./components/copyRight.vue";
 
 export default {
   name: "App",
+  data() {
+    return {
+      seen: false,
+    };
+  },
   components: {
     UpperNav,
     navBar,
     bloodFooter,
     copyRight,
+  },
+  methods: {
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    },
   },
 };
 </script>

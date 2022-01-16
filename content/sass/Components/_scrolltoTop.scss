@@ -1,0 +1,24 @@
+.up{
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  background-color: $mainColor;
+  color: $colorRed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 25px;
+  transition: $transtion;
+  &:hover{
+    color: #fff;
+  }
+  // &.active{
+  //   left: 10px;
+  //   transition: $transtion;
+  // }
+  
+}
