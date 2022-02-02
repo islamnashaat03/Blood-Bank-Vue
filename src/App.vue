@@ -1,6 +1,6 @@
 <template>
   <div id="app" dir="rtl">
-    <a @click="scrollToTop()" class="up">
+    <a @click="scrollToTop()" class="up" v-bind:class="{ active: isActive }">
       <i class="fas fa-arrow-up"></i>
     </a>
     <upper-nav />
@@ -20,7 +20,7 @@ export default {
   name: "App",
   data() {
     return {
-      seen: false,
+      isActive: "",
     };
   },
   components: {
@@ -29,6 +29,12 @@ export default {
     bloodFooter,
     copyRight,
   },
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
   methods: {
     scrollToTop() {
       window.scrollTo({
@@ -36,6 +42,15 @@ export default {
         behavior: "smooth",
       });
     },
+    handleScroll() {
+      if (scrollY > 800) {
+        console.log(this);
+        this.isActive = true;
+      } else {
+        this.isActive = false;
+      }
+    },
   },
+  computed: {},
 };
 </script>

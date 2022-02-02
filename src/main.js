@@ -11,9 +11,10 @@ Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 import "@fortawesome/fontawesome-free/js/all.js";
 import "@fortawesome/fontawesome-free/css/all.css";
+import VueAwesomeSwiper from "vue-awesome-swiper";
 import "../content/sass/main.scss";
 Vue.config.productionTip = false;
-
+Vue.use(VueAwesomeSwiper);
 new Vue({
   router,
   render: (h) => h(App),

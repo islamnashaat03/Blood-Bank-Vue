@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <carousel />
+    <swiper />
     <site-info />
     <articles title="المقالات"></articles>
     <donations />
@@ -12,6 +13,7 @@
 <script>
 import carousel from "../components/carousel.vue";
 import SiteInfo from "../components/siteInfo.vue";
+import swiper from "../components/swiper.vue";
 import Articles from "../components/Articles.vue";
 import Donations from "../components/donations.vue";
 import CallUs from "../components/callUs.vue";
@@ -26,6 +28,7 @@ export default {
     Donations,
     CallUs,
     BloodApp,
+    swiper,
     // UpperNav,
   },
 };

@@ -1,24 +1,25 @@
 .up{
   position: fixed;
-  left: 10px;
+  left: -50px;
   bottom: 10px;
-  background-color: $mainColor;
-  color: $colorRed;
+  background-color: $colorRed;
+  color: #fff;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10;
   cursor: pointer;
   font-size: 25px;
   transition: $transtion;
   &:hover{
     color: #fff;
   }
-  // &.active{
-  //   left: 10px;
-  //   transition: $transtion;
-  // }
+  &.active{
+    left: 10px;
+    transition: $transtion;
+  }
   
 }
