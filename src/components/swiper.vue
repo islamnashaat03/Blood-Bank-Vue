@@ -1,11 +1,7 @@
 <template>
   <div class="header">
     <div class="container">
-      <swiper
-        class="swiper"
-        ref="mySwiper"
-        :options="swiperOptions"
-      >
+      <swiper ref="mySwiper" :options="swiperOptions">
         <swiper-slide>
           <h2>{{ title }}</h2>
           <p>
@@ -43,8 +39,8 @@
         </swiper-slide>
 
         <div class="swiper-pagination" slot="pagination"></div>
-        <!-- <div class="swiper-button-prev" slot="button-prev"></div>
-    <div class="swiper-button-next" slot="button-next"></div> -->
+        <div class="swiper-button-prev" slot="button-prev"></div>
+    <div class="swiper-button-next" slot="button-next"></div>
       </swiper>
     </div>
   </div>
@@ -66,6 +62,8 @@ export default {
   data() {
     return {
       swiperOptions: {
+        loop: true,
+        autoplay: true,
         pagination: {
           el: ".swiper-pagination",
           dynamicBullets: true,
@@ -77,10 +75,10 @@ export default {
       },
     };
   },
-  // computed: {
-  //   swiper() {
-  //     return this.$refs.mySwiper.$swiper;
-  //   },
-  // },
+  computed: {
+    swiper() {
+      return this.$refs.mySwiper.$swiper;
+    },
+  },
 };
 </script>
