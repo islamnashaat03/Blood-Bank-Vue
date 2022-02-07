@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="container">
-      <swiper ref="mySwiper" :options="swiperOptions">
+      <swiper ref="mySwiper" :options="swiperOptions" dir="rtl">
         <swiper-slide>
           <h2>بنك الدم نمضي قدما لصحة افضل</h2>
           <p>
@@ -75,6 +75,7 @@ export default {
         pagination: {
           el: ".swiper-pagination",
           // dynamicBullets: true,
+          clickable: true
         },
         navigation: {
           nextEl: ".swiper-button-next",
