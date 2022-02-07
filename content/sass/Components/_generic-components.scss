@@ -6,6 +6,13 @@ img {
   max-width: 100%;
 }
 
+.btn,
+input {
+  &:focus {
+    box-shadow: none;
+  }
+}
+
 a {
   text-decoration: none;
 
@@ -13,9 +20,11 @@ a {
     text-decoration: none;
   }
 }
-body{
+
+body {
   margin: 0;
 }
+
 .navy-btn {
   background-color: $mainColor;
   border-radius: 5px;
@@ -24,27 +33,31 @@ body{
   outline: none;
   padding: 5px;
   transition: $transtion;
-  &:hover{
+
+  &:hover {
     background-color: $colorLight;
     color: $mainColor;
     transition: $transtion;
   }
 }
-.grey-btn{
-  background-color:$colorLight;
+
+.grey-btn {
+  background-color: $colorLight;
   border-radius: 5px;
   color: $mainColor;
   border: none;
   outline: none;
   padding: 5px;
   transition: $transtion;
-  &:hover{
+
+  &:hover {
     background-color: $mainColor;
     color: $colorLight;
     transition: $transtion;
   }
 }
-.d-flex{
+
+.d-flex {
   display: flex;
   align-items: center;
 }

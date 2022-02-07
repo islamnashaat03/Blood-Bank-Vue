@@ -1,38 +1,86 @@
 <template>
-  <swiper ref="mySwiper" :options="swiperOptions">
-    <swiper-slide>Slide 1</swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>
-    <swiper-slide>Slide 4</swiper-slide>
-    <swiper-slide>Slide 5</swiper-slide>
-    <div class="swiper-pagination" slot="pagination"></div>
-  </swiper>
-</template>
-<script>
-// Import Swiper Vue.js components
-// import { Swiper, SwiperSlide, directive } from "vue-awesome-swiper";
-// import "";
+  <div class="header">
+    <div class="container">
+      <swiper
+        class="swiper"
+        ref="mySwiper"
+        :options="swiperOptions"
+      >
+        <swiper-slide>
+          <h2>{{ title }}</h2>
+          <p>
+            {{ paragraph }}
+          </p>
+          <router-link to="/about" class="btn">المزيد</router-link>
+        </swiper-slide>
+        <swiper-slide>
+          <h2>{{ title }}</h2>
+          <p>
+            {{ paragraph }}
+          </p>
+          <router-link to="/about" class="btn">المزيد</router-link>
+        </swiper-slide>
+        <swiper-slide>
+          <h2>{{ title }}</h2>
+          <p>
+            {{ paragraph }}
+          </p>
+          <router-link to="/about" class="btn">المزيد</router-link>
+        </swiper-slide>
+        <swiper-slide>
+          <h2>{{ title }}</h2>
+          <p>
+            {{ paragraph }}
+          </p>
+          <router-link to="/about" class="btn">المزيد</router-link>
+        </swiper-slide>
+        <swiper-slide>
+          <h2>{{ title }}</h2>
+          <p>
+            {{ paragraph }}
+          </p>
+          <router-link to="/about" class="btn">المزيد</router-link>
+        </swiper-slide>
 
+        <div class="swiper-pagination" slot="pagination"></div>
+        <!-- <div class="swiper-button-prev" slot="button-prev"></div>
+    <div class="swiper-button-next" slot="button-next"></div> -->
+      </swiper>
+    </div>
+  </div>
+</template>
+
+<script>
+import { Swiper, SwiperSlide, directive } from "vue-awesome-swiper";
+import "swiper/swiper-bundle.css";
 export default {
-  name: "carrousel",
+  name: "Slider",
+  props: ["title", "paragraph"],
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  directives: {
+    swiper: directive,
+  },
   data() {
     return {
       swiperOptions: {
         pagination: {
           el: ".swiper-pagination",
+          dynamicBullets: true,
         },
-        // Some Swiper option/callback...
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       },
     };
   },
-  computed: {
-    swiper() {
-      return this.$refs.mySwiper.$swiper;
-    },
-  },
-  mounted() {
-    // console.log("Current Swiper instance object", this.swiper);
-    // this.swiper.slideTo(3, 1000, false);
-  },
+  // computed: {
+  //   swiper() {
+  //     return this.$refs.mySwiper.$swiper;
+  //   },
+  // },
 };
 </script>

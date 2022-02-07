@@ -3,7 +3,7 @@
     <div class="container">
       <h3>{{ title }}</h3>
       <hr />
-      <carousel
+      <!-- <carousel
         class="owl-articles"
         :autoplay="false"
         :margin="15"
@@ -88,15 +88,13 @@
           </div>
           <i class="fas fa-heart"></i>
         </div>
-      </carousel>
+      </carousel> -->
     </div>
   </section>
 </template>
 
 <script>
-import carousel from "vue-owl-carousel";
 export default {
-  components: { carousel },
   props: ["title"],
 };
 </script>

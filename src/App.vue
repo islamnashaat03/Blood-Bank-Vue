@@ -44,7 +44,6 @@ export default {
     },
     handleScroll() {
       if (scrollY > 800) {
-        console.log(this);
         this.isActive = true;
       } else {
         this.isActive = false;

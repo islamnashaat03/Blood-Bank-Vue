@@ -17,11 +17,9 @@
     "bootstrap": "^5.1.3",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.6.5",
-    "owl.carousel": "^2.3.4",
-    "swiper": "^7.4.1",
+    "swiper": "^6.0.0",
     "vue": "^2.6.14",
     "vue-awesome-swiper": "^4.1.1",
-    "vue-owl-carousel": "^2.0.3",
     "vue-router": "^3.2.0"
   },
   "devDependencies": {
