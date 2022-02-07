@@ -8,16 +8,16 @@ import "bootstrap/dist/js/bootstrap.bundle";
 
 import "@fortawesome/fontawesome-free/js/all.js";
 import "@fortawesome/fontawesome-free/css/all.css";
-import getAwesomeSwiper from "vue-awesome-swiper/dist/exporter";
-import VueAwesomeSwiper from "vue-awesome-swiper";
+// import getAwesomeSwiper from "vue-awesome-swiper/dist/exporter";
+// import VueAwesomeSwiper from "vue-awesome-swiper";
 import "swiper/swiper-bundle.css";
-import "../content/sass/main.scss";
-
+import vue2Swiper from "vue2-swiper";
 Vue.config.productionTip = false;
-Vue.use(BootstrapVue, IconsPlugin, VueAwesomeSwiper, getAwesomeSwiper);
+Vue.use(BootstrapVue, IconsPlugin, vue2Swiper);
 // Vue.use(IconsPlugin);
 // Vue.use(VueAwesomeSwiper);
 // Vue.use(getAwesomeSwiper);
+import "../content/sass/main.scss";
 new Vue({
   router,
   render: (h) => h(App),

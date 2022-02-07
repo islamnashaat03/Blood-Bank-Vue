@@ -1,6 +1,10 @@
 <template>
   <div class="home">
-    <slider />
+    <slider
+      title="بنك الدم نمضي قدما لصحة افضل"
+      paragraph="هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة ، لقد تم
+            توليد هذا النص من مولد النص العرب"
+    ></slider>
     <site-info />
     <articles title="المقالات"></articles>
     <donations />

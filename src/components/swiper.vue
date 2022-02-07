@@ -1,92 +1,67 @@
 <template>
   <div class="header">
     <div class="container">
-      <swiper ref="mySwiper" :options="swiperOptions" dir="rtl">
-        <swiper-slide>
-          <h2>بنك الدم نمضي قدما لصحة افضل</h2>
-          <p>
-            هذا النص هو مثال لنص يمكن أن يستبدل<br />في نفس المساحة ، لقد تم
-            توليد هذا النص<br />من مولد النص العرب
-          </p>
+      <swiper
+        ref="switchDemo"
+        dir="rtl"
+        pagination-visible
+        pagination-clickable
+        loop
+        :autoplay="5000"
+      >
+        <div class="swiper-slide">
+          <h2>{{ title }}</h2>
+          <p>{{ paragraph }}</p>
           <router-link to="/about" class="btn">المزيد</router-link>
-        </swiper-slide>
-        <swiper-slide>
-          <h2>بنك الدم نمضي قدما لصحة افضل</h2>
-          <p>
-            هذا النص هو مثال لنص يمكن أن يستبدل<br />في نفس المساحة ، لقد تم
-            توليد هذا النص<br />من مولد النص العرب
-          </p>
+        </div>
+        <div class="swiper-slide">
+          <h2>{{ title }}</h2>
+          <p>{{ paragraph }}</p>
           <router-link to="/about" class="btn">المزيد</router-link>
-        </swiper-slide>
-        <swiper-slide>
-          <h2>بنك الدم نمضي قدما لصحة افضل</h2>
-          <p>
-            هذا النص هو مثال لنص يمكن أن يستبدل<br />في نفس المساحة ، لقد تم
-            توليد هذا النص<br />من مولد النص العرب
-          </p>
+        </div>
+        <div class="swiper-slide">
+          <h2>{{ title }}</h2>
+          <p>{{ paragraph }}</p>
           <router-link to="/about" class="btn">المزيد</router-link>
-        </swiper-slide>
-        <swiper-slide>
-          <h2>بنك الدم نمضي قدما لصحة افضل</h2>
-          <p>
-            هذا النص هو مثال لنص يمكن أن يستبدل<br />في نفس المساحة ، لقد تم
-            توليد هذا النص<br />من مولد النص العرب
-          </p>
+        </div>
+        <div class="swiper-slide">
+          <h2>{{ title }}</h2>
+          <p>{{ paragraph }}</p>
           <router-link to="/about" class="btn">المزيد</router-link>
-        </swiper-slide>
-        <swiper-slide>
-          <h2>بنك الدم نمضي قدما لصحة افضل</h2>
-          <p>
-            هذا النص هو مثال لنص يمكن أن يستبدل<br />في نفس المساحة ، لقد تم
-            توليد هذا النص<br />من مولد النص العرب
-          </p>
+        </div>
+        <div class="swiper-slide">
+          <h2>{{ title }}</h2>
+          <p>{{ paragraph }}</p>
           <router-link to="/about" class="btn">المزيد</router-link>
-        </swiper-slide>
-
-        <div class="swiper-pagination" slot="pagination"></div>
-        <div class="swiper-pagination" slot="pagination"></div>
-        <div class="swiper-pagination" slot="pagination"></div>
-        <div class="swiper-pagination" slot="pagination"></div>
-        <div class="swiper-pagination" slot="pagination"></div>
-        <div class="swiper-button-prev" slot="button-prev"></div>
-        <div class="swiper-button-next" slot="button-next"></div>
+        </div>
+        <div class="swiper-slide">
+          <h2>{{ title }}</h2>
+          <p>{{ paragraph }}</p>
+          <router-link to="/about" class="btn">المزيد</router-link>
+        </div>
       </swiper>
+      <button @click="prev">prev</button>
+      <button @click="next">next</button>
     </div>
   </div>
 </template>
 
 <script>
-import { Swiper, SwiperSlide, directive } from "vue-awesome-swiper";
+import { Swiper } from "vue2-swiper";
+
 import "swiper/swiper-bundle.css";
 export default {
   name: "Slider",
   props: ["title", "paragraph"],
   components: {
     Swiper,
-    SwiperSlide,
   },
-  directives: {
-    swiper: directive,
-  },
-  data() {
-    return {
-      swiperOptions: {
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          // dynamicBullets: true,
-          clickable: true
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      },
-    };
-  },
-  computed: {
-    swiper() {
-      return this.$refs.mySwiper.$swiper;
+  methods: {
+    prev() {
+      this.$refs.switchDemo.prev();
+    },
+    next() {
+      this.$refs.switchDemo.next();
     },
   },
 };
