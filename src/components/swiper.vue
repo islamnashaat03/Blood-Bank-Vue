@@ -3,37 +3,42 @@
     <div class="container">
       <swiper ref="mySwiper" :options="swiperOptions">
         <swiper-slide>
-          <h2>{{ title }}</h2>
+          <h2>بنك الدم نمضي قدما لصحة افضل</h2>
           <p>
-            {{ paragraph }}
+            هذا النص هو مثال لنص يمكن أن يستبدل<br />في نفس المساحة ، لقد تم
+            توليد هذا النص<br />من مولد النص العرب
           </p>
           <router-link to="/about" class="btn">المزيد</router-link>
         </swiper-slide>
         <swiper-slide>
-          <h2>{{ title }}</h2>
+          <h2>بنك الدم نمضي قدما لصحة افضل</h2>
           <p>
-            {{ paragraph }}
+            هذا النص هو مثال لنص يمكن أن يستبدل<br />في نفس المساحة ، لقد تم
+            توليد هذا النص<br />من مولد النص العرب
           </p>
           <router-link to="/about" class="btn">المزيد</router-link>
         </swiper-slide>
         <swiper-slide>
-          <h2>{{ title }}</h2>
+          <h2>بنك الدم نمضي قدما لصحة افضل</h2>
           <p>
-            {{ paragraph }}
+            هذا النص هو مثال لنص يمكن أن يستبدل<br />في نفس المساحة ، لقد تم
+            توليد هذا النص<br />من مولد النص العرب
           </p>
           <router-link to="/about" class="btn">المزيد</router-link>
         </swiper-slide>
         <swiper-slide>
-          <h2>{{ title }}</h2>
+          <h2>بنك الدم نمضي قدما لصحة افضل</h2>
           <p>
-            {{ paragraph }}
+            هذا النص هو مثال لنص يمكن أن يستبدل<br />في نفس المساحة ، لقد تم
+            توليد هذا النص<br />من مولد النص العرب
           </p>
           <router-link to="/about" class="btn">المزيد</router-link>
         </swiper-slide>
         <swiper-slide>
-          <h2>{{ title }}</h2>
+          <h2>بنك الدم نمضي قدما لصحة افضل</h2>
           <p>
-            {{ paragraph }}
+            هذا النص هو مثال لنص يمكن أن يستبدل<br />في نفس المساحة ، لقد تم
+            توليد هذا النص<br />من مولد النص العرب
           </p>
           <router-link to="/about" class="btn">المزيد</router-link>
         </swiper-slide>
@@ -44,7 +49,7 @@
         <div class="swiper-pagination" slot="pagination"></div>
         <div class="swiper-pagination" slot="pagination"></div>
         <div class="swiper-button-prev" slot="button-prev"></div>
-    <div class="swiper-button-next" slot="button-next"></div>
+        <div class="swiper-button-next" slot="button-next"></div>
       </swiper>
     </div>
   </div>
@@ -67,10 +72,9 @@ export default {
     return {
       swiperOptions: {
         loop: true,
-        autoplay: true,
         pagination: {
           el: ".swiper-pagination",
-          dynamicBullets: true,
+          // dynamicBullets: true,
         },
         navigation: {
           nextEl: ".swiper-button-next",
