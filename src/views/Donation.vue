@@ -70,9 +70,9 @@
                 </div>
               </div>
               <div class="col-sm-3 d-flex justify-content-center">
-                <a href="doantions application.html" class="details-btn"
-                  >التفاصيل</a
-                >
+                <router-link to="/donationApp" class="details-btn"
+                  >التفاصيل
+                </router-link>
               </div>
             </div>
           </div>
@@ -91,9 +91,9 @@
                 </div>
               </div>
               <div class="col-sm-3 d-flex justify-content-center">
-                <a href="doantions application.html" class="details-btn"
-                  >التفاصيل</a
-                >
+                <router-link to="/donationApp" class="details-btn"
+                  >التفاصيل
+                </router-link>
               </div>
             </div>
           </div>
@@ -112,9 +112,9 @@
                 </div>
               </div>
               <div class="col-sm-3 d-flex justify-content-center">
-                <a href="doantions application.html" class="details-btn"
-                  >التفاصيل</a
-                >
+                <router-link to="/donationApp" class="details-btn"
+                  >التفاصيل
+                </router-link>
               </div>
             </div>
           </div>
@@ -133,9 +133,9 @@
                 </div>
               </div>
               <div class="col-sm-3 d-flex justify-content-center">
-                <a href="doantions application.html" class="details-btn"
-                  >التفاصيل</a
-                >
+                <router-link to="/donationApp" class="details-btn"
+                  >التفاصيل
+                </router-link>
               </div>
             </div>
           </div>
@@ -154,9 +154,9 @@
                 </div>
               </div>
               <div class="col-sm-3 d-flex justify-content-center">
-                <a href="doantions application.html" class="details-btn"
-                  >التفاصيل</a
-                >
+                <router-link to="/donationApp" class="details-btn"
+                  >التفاصيل
+                </router-link>
               </div>
             </div>
           </div>
@@ -175,9 +175,9 @@
                 </div>
               </div>
               <div class="col-sm-3 d-flex justify-content-center">
-                <a href="doantions application.html" class="details-btn"
-                  >التفاصيل</a
-                >
+                <router-link to="/donationApp" class="details-btn"
+                  >التفاصيل
+                </router-link>
               </div>
             </div>
           </div>
@@ -196,9 +196,9 @@
                 </div>
               </div>
               <div class="col-sm-3 d-flex justify-content-center">
-                <a href="doantions application.html" class="details-btn"
-                  >التفاصيل</a
-                >
+                <router-link to="/donationApp" class="details-btn"
+                  >التفاصيل
+                </router-link>
               </div>
             </div>
           </div>

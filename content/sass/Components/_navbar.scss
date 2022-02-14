@@ -56,16 +56,16 @@
         }
 
         .router-link-exact-active {
-            color: $colorRed2;
+          color: $colorRed2;
 
-            &::before {
-              width: 100%;
-              transition: $transtion;
-              right: 0;
-              left: 0;
-              bottom: -22px;
-            }
-          
+          &::before {
+            width: 100%;
+            transition: $transtion;
+            right: 0;
+            left: 0;
+            bottom: -22px;
+          }
+
         }
 
         &:not(:last-child) {
@@ -148,9 +148,34 @@
   }
 }
 
-@media (min-width:992px) {
+@media (min-width:992px) and (max-width:1200px) {
   .nav-bar {
     .navbar-collapse {
+      .navbar-nav {
+        gap: 0;
+        padding-right: 0;
+
+        .nav-item {
+          .nav-link {
+            &::before {
+              bottom: -27px;
+            }
+
+            &:hover {
+              &::before {
+                bottom: -27px;
+              }
+            }
+          }
+
+          .router-link-exact-active {
+            &::before {
+              bottom: -27px;
+            }
+          }
+        }
+      }
+
       .navbar-nav__user {
         gap: 10px;
         justify-content: space-evenly;
@@ -158,27 +183,30 @@
     }
   }
 }
+
 @media (min-width:1200px) and (max-width:1440px) {
-  .nav-bar{
-    .navbar-collapse{
-      .navbar-nav{
+  .nav-bar {
+    .navbar-collapse {
+      .navbar-nav {
+
         .nav-item {
           .nav-link {
-            &::before{
+            &::before {
               bottom: -27px;
             }
-            &:hover{
-              &::before{
+
+            &:hover {
+              &::before {
                 bottom: -27px;
               }
             }
           }
+
           .router-link-exact-active {
             &::before {
               bottom: -27px;
             }
-          
-        }
+          }
         }
       }
     }

@@ -1,0 +1,71 @@
+.donation-application-page {
+  .application {
+    background-color: #fff;
+    border: 1px solid #efefef;
+    margin-bottom: 30px;
+    padding: 5px;
+
+    .application__data {
+      .info {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        border: 1px solid rgba(0, 0, 0, .125);
+
+        .info-key {
+          background-color: #f4f4f4;
+          padding: 15px;
+          font-weight: bold;
+          flex: 0.5;
+        }
+
+        .info-value {
+          background-color: #fbfbfb;
+          padding: 0 15px;
+          font-weight: bold;
+          flex: 2;
+        }
+      }
+
+      .btn {
+        @extend.navy-btn;
+        padding: 15px;
+        min-width: 250px;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        margin: 20px auto 30px;
+      }
+
+
+    }
+
+    .paragraph {
+      border: 1px solid #f2f2f2;
+      padding: 10px;
+      color: #424242;
+      margin: 15px 0;
+    }
+  }
+}
+
+@media (max-width:991px) {
+  .donation-application-page {
+    .application {
+      .application__data {
+        .info {
+          flex-direction: column;
+
+          .info-key,
+          .info-value {
+            width: 100%;
+            text-align: center;
+            padding: 15px;
+          }
+
+        }
+      }
+    }
+  }
+}
