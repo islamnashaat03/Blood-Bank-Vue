@@ -1,0 +1,131 @@
+.register-page {
+  .register {
+    .register-wrapper {
+      background-color: #fff;
+      border: 2px solid #efefef;
+      padding: 20px;
+      margin: 30px auto;
+
+      .logo {
+        display: block;
+        margin: 45px auto;
+        height: 120px;
+      }
+
+      form {
+        width: 85%;
+        margin: auto;
+
+        .input-group {
+          margin: 40px auto;
+
+          .form-control {
+            padding: 15px;
+            border-radius: 0;
+            background-color: #fbfbfb;
+            font-weight: bold;
+            border: 1px solid #efefef;
+            font-size: 18px;
+          }
+        }
+
+        .wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 20px;
+          margin-bottom: 40px;
+          gap: 15px;
+
+          .check-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+
+            .styled-checkbox {
+              transform: scale(1.6);
+            }
+
+            .remeber-me {
+              font-size: 18px;
+              font-weight: bold;
+              color: #3c3c3c;
+            }
+          }
+
+          .forget-pass {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .warning-img {
+              width: 20px;
+            }
+
+            .text {
+              color: #3c3c3c;
+              font-size: 18px;
+              font-weight: bold;
+            }
+          }
+
+          .submit-btn {
+            background-color: #3ab54a;
+            color: #fff;
+            font-size: 25px;
+            flex: 1;
+          }
+
+          .create-new-acc-btn {
+            background-color: $mainColor;
+            color: #fff;
+            flex: 1;
+            font-size: 25px;
+          }
+        }
+
+        .buttons--wrapper {
+          gap: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:768px) {
+  .register-page {
+    .register {
+      .register-wrapper {
+        padding: 5px;
+
+        form {
+          width: 100%;
+
+          .wrapper {
+            padding: 0;
+            .check-box{
+              .remeber-me{
+                font-size: unset;
+              }
+            }
+            .forget-pass{
+              gap: 5px;
+              .text{
+                font-size: unset;
+              }
+            }
+          }
+
+          .buttons--wrapper {
+            flex-direction: column;
+
+            .btn {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

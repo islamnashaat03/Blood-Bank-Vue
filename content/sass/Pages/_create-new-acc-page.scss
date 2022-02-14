@@ -1,0 +1,124 @@
+.create-new-acc-page {
+  .new-account {
+    .create-new-acc {
+      background-color: #fff;
+      border: 2px solid #efefef;
+      padding: 20px;
+      margin: 30px 0;
+
+      .form-wrapper {
+        width: 90%;
+        margin: 20px 0;
+
+        form {
+          .input-group {
+            margin: 25px 0;
+
+            .form-control {
+              height: 55px;
+              background-color: #fbfbfb;
+              border-radius: 0;
+              font-weight: bold;
+              // border: 2px solid #efefef;
+              transition: $transtion;
+
+              &:focus {
+                box-shadow: none;
+                border: 2px solid #c7bfc0;
+                transition: $transtion;
+              }
+
+              &:invalid {
+                background-position: left calc(0.375em + 0.1875rem) center;
+              }
+
+              &:valid {
+                background-position: left calc(1.7em + 0.1875rem) center;
+              }
+            }
+
+            input[type="date"] {
+              flex-direction: row-reverse;
+              justify-content: space-between;
+              text-align: end;
+
+              &::-webkit-inner-spin-button {
+                display: none;
+                background: none;
+                -webkit-appearance: none;
+              }
+
+              &::-webkit-calendar-picker-indicator {
+                padding: 0;
+                background-image: url(../imgs/calendar-alt-solid.svg);
+                background-position: left;
+              }
+
+              &::-webkit-clear-button {
+                display: none;
+                /* Hide the button */
+                -webkit-appearance: none;
+                /* turn off default browser styling */
+              }
+            }
+
+            select {
+              background-image: url(../imgs/chevron-down-solid.svg);
+              background-position: left;
+              background-repeat: no-repeat;
+              background-size: 20px;
+              background-position: 15px center;
+              cursor: pointer;
+            }
+
+            .submit-btn {
+              width: 50%;
+              background-color: $colorLight;
+              color: #212529;
+              font-size: 25px;
+              padding: 10px;
+              border: #dfe1e0;
+              margin: auto;
+              border-radius: 0;
+              letter-spacing: 1.5px;
+              position: relative;
+              transition: all 1s;
+              overflow: hidden;
+
+              &::before {
+                position: absolute;
+                content: "";
+                right: 0;
+                top: 0;
+                background-color: $mainColor;
+                width: 100%;
+                height: 100%;
+                transform: translateX(103%);
+                z-index: -2;
+                transition: all 1s;
+
+
+              }
+
+              &:hover {
+                color: #fff;
+
+                &::before {
+                  transform: translateX(0);
+                }
+              }
+
+              &:focus {
+                box-shadow: none;
+
+                &::before {
+                  transform: translateX(0);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

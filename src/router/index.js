@@ -47,7 +47,7 @@ const routes = [
     path: "/newAcc",
     name: "newAcc",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/newAcc.vue"),
+      import(/* webpackChunkName: "about" */ "../views/createNewAcc.vue"),
   },
   {
     path: "/signIn",
