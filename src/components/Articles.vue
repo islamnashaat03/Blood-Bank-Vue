@@ -1,5 +1,5 @@
 <template>
-  <section class="articles">
+  <section class="articles" style="display: none;">
     <div class="container">
       <h3>{{ title }}</h3>
       <hr />
