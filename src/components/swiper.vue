@@ -14,30 +14,12 @@
         <router-link to="/about" class="btn">المزيد</router-link>
       </div>
       <div class="swiper-slide">
-        <h2>{{ title }}</h2>
-        <p>{{ paragraph }}</p>
+        <h2>طريقة الوقاية من الامراض</h2>
+        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة ، لقد تم توليد هذا النص من مولد النص
+              العرب</p>
         <router-link to="/about" class="btn">المزيد</router-link>
       </div>
-      <div class="swiper-slide">
-        <h2>{{ title }}</h2>
-        <p>{{ paragraph }}</p>
-        <router-link to="/about" class="btn">المزيد</router-link>
-      </div>
-      <div class="swiper-slide">
-        <h2>{{ title }}</h2>
-        <p>{{ paragraph }}</p>
-        <router-link to="/about" class="btn">المزيد</router-link>
-      </div>
-      <div class="swiper-slide">
-        <h2>{{ title }}</h2>
-        <p>{{ paragraph }}</p>
-        <router-link to="/about" class="btn">المزيد</router-link>
-      </div>
-      <div class="swiper-slide">
-        <h2>{{ title }}</h2>
-        <p>{{ paragraph }}</p>
-        <router-link to="/about" class="btn">المزيد</router-link>
-      </div>
+
     </swiper>
     <!-- <button @click="prev">prev</button>
       <button @click="next">next</button> -->
